@@ -3,7 +3,7 @@
   "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": { "api/chat.js": { "maxDuration": 30, "includeFiles": "data/track2_admission_info.txt" } },
+  "functions": { "api/chat.js": { "maxDuration": 30, "includeFiles": "data/**" } },
   "headers": [
     { "source": "/(.*)", "headers": [
       { "key": "X-Content-Type-Options", "value": "nosniff" },

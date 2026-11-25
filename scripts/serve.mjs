@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { loadEnvFile } from 'node:process';
-import { handleChat } from '../server/chat.js';
+import { handleChat } from '../server/assistant.js';
 
 try { loadEnvFile('.env.local'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 
@@ -14,7 +14,7 @@ const server = createServer(async (req, res) => {
     const requestUrl = new URL(req.url, `http://${req.headers.host || `127.0.0.1:${port}`}`);
     if (requestUrl.pathname === '/api/chat') {
       let size = 0; const chunks = [];
-      for await (const chunk of req) { size += chunk.length; if(size > 60000) { res.writeHead(413); res.end('Request too large'); return; } chunks.push(chunk); }
+      for await (const chunk of req) { size += chunk.length; if(size > 120000) { res.writeHead(413); res.end('Request too large'); return; } chunks.push(chunk); }
       const response = await handleChat(new Request(requestUrl,{method:req.method,headers:req.headers,...(!['GET','HEAD'].includes(req.method) ? {body:Buffer.concat(chunks)} : {})}));
       res.writeHead(response.status,Object.fromEntries(response.headers)); res.end(Buffer.from(await response.arrayBuffer())); return;
     }

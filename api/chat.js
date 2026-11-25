@@ -1,2 +1,2 @@
-import { handleChat } from '../server/chat.js';
+import { handleChat } from '../server/assistant.js';
 export default { fetch: handleChat };

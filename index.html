@@ -1,54 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#174d3c" />
-    <meta name="description" content="Admibot-AI helps you explore university programs, fees, eligibility, and admission steps in English or Bangla." />
-    <title>Admibot-AI — Admission Assistant</title>
-    <link rel="icon" href="./src/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./src/styles.css" />
-    <script type="module" src="./src/app.js"></script>
-  </head>
-  <body>
-    <div class="app-shell">
-      <aside class="sidebar" aria-label="University and navigation">
-        <a class="brand" href="./" aria-label="Admibot-AI home"><span class="brand-mark" data-icon="crest"></span><span>Admibot-AI<span class="brand-caption">ADMISSION ASSISTANT</span></span></a>
-        <div class="workspace-label" data-i18n="workspace">YOUR NEXT CHAPTER</div>
-        <nav aria-label="Main navigation">
-          <button class="nav-item active" id="nav-chat"><span data-icon="chat"></span><span data-i18n="admissionChat">Admission chat</span><span class="nav-dot"></span></button>
-          <button class="nav-item" data-prompt="programs"><span data-icon="book"></span><span data-i18n="explorePrograms">Explore programs</span><span class="nav-arrow">↗</span></button>
-          <button class="nav-item" data-prompt="dates"><span data-icon="calendar"></span><span data-i18n="importantDates">Important dates</span><span class="nav-arrow">↗</span></button>
-        </nav>
-        <div class="sidebar-note"><span class="tiny-line"></span><span data-i18n="smallStep">A small step today.<br>A world of possibilities tomorrow.</span></div>
-        <div class="intake-card"><div class="intake-illustration" aria-hidden="true"><span class="sun"></span><span class="arch arch-one"></span><span class="arch arch-two"></span><span class="stair"></span></div><span class="eyebrow" data-i18n="lookingAhead">LOOKING AHEAD</span><h3 data-i18n="fallIntake">Fall 2027 intake</h3><p data-i18n="intakeText">Your future has a starting point.<br>Let’s find yours.</p><button data-prompt="dates"><span data-i18n="viewTimeline">View admission timeline</span><span>↗</span></button></div>
-        <button class="source-link" id="source-button"><span data-icon="file"></span><span data-i18n="admissionSource">Admission information</span><span>↗</span></button>
-        <div class="sidebar-footer"><span class="location-dot"></span> Chattogram, Bangladesh</div>
-      </aside>
-
-      <div class="main-shell">
-        <header class="topbar"><div class="breadcrumb"><span class="desktop-only" data-i18n="studentSupport">Student support</span><span class="desktop-only slash">/</span><span data-i18n="admissions">Admissions</span></div><div class="header-actions"><span class="intake-badge"><span></span> <span data-i18n="intakeBadge">Fall 2027 guide</span></span><div class="language-toggle" role="group" aria-label="Interface language"><button id="lang-en" aria-pressed="true">EN</button><button id="lang-bn" lang="bn" aria-pressed="false">বাংলা</button></div><span class="avatar" aria-label="Future student" data-icon="user"></span></div></header>
-        <div class="content-shell">
-          <main class="chat-column" id="main-content">
-            <div class="chat-heading"><div><div class="eyebrow green"><span class="spark-mini" data-icon="spark"></span><span data-i18n="companion">YOUR ADMISSION COMPANION</span></div><h1 data-i18n="letsTalk">Big plans. Let’s talk.</h1><p data-i18n="headingSub">A little clarity for your next big step.</p></div><button class="icon-button clear-button" id="clear-chat" title="Clear chat" aria-label="Clear chat"><span data-icon="refresh"></span></button></div>
-            <div class="chat-stage" id="chat-stage">
-              <section class="welcome" id="welcome" aria-labelledby="welcome-title"><div class="welcome-symbol" data-icon="spark"></div><span class="welcome-kicker" data-i18n="helloThere">HELLO, FUTURE YOU</span><h2 id="welcome-title" data-i18n="welcomeTitle">Your next chapter<br>starts with a question.</h2><p data-i18n="welcomeText">From choosing a program to figuring out fees,<br>I’m here to help you find your way to Bayview.</p><div class="topic-grid" id="topic-grid"></div><div class="trust-line"><span data-icon="shield"></span><span data-i18n="grounded">Answers grounded in the provided admission guide</span></div></section>
-              <div class="messages" id="messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Admission conversation"></div>
-            </div>
-            <div class="composer-area"><div class="context-bar" id="context-bar" hidden></div><div id="followup-chips" class="followup-chips"></div><form id="chat-form" class="composer"><label class="sr-only" for="message-input">Ask an admission question</label><textarea id="message-input" name="message" rows="1" maxlength="1500" placeholder="Ask anything about admissions…" autocomplete="off"></textarea><div class="composer-bottom"><span><span class="composer-spark" data-icon="spark"></span><span data-i18n="askBoth">Ask in English or বাংলা</span></span><button id="send-button" type="submit" aria-label="Send message" disabled><span data-icon="arrowUp"></span></button></div></form><div class="composer-disclaimer"><span data-i18n="sampleDisclaimer">A fictional university. A real head start. Sample data · Fall 2027</span><span id="character-count" aria-live="off"></span></div></div>
-          </main>
-
-          <aside class="guide-column" aria-label="Admission guide">
-            <div class="guide-title"><span data-i18n="atGlance">YOUR ADMISSION, AT A GLANCE</span><span data-icon="grid"></span></div>
-            <section class="deadline-card"><div class="deadline-top"><span class="calendar-tile" data-icon="calendar"></span><span class="pill" data-i18n="nextIntake">NEXT INTAKE</span></div><h2 data-i18n="fallIntake">Fall 2027 intake</h2><p data-i18n="applicationsClose">Applications close</p><strong data-i18n="deadlineDate">30 June 2027</strong><div class="deadline-divider"></div><div class="mini-row"><span data-i18n="admissionTest">Admission test</span><span data-i18n="testDate">05 Jul 2027</span></div><div class="mini-row"><span data-i18n="classesBegin">Classes begin</span><span data-i18n="classDate">01 Aug 2027</span></div><button class="text-button" data-prompt="dates"><span data-i18n="allDates">See all important dates</span><span>↗</span></button></section>
-            <section class="checklist-card"><div class="section-title"><h2 data-i18n="yourChecklist">Your admission checklist</h2><span id="checklist-count">0/6</span></div><p class="section-sub" data-i18n="oneStep">One step closer, one check at a time.</p><div class="progress-track"><div id="checklist-progress"></div></div><div id="checklist-items"></div><div class="saved-note"><span data-icon="lock"></span><span data-i18n="savedLocally">Saved on this device</span></div></section>
-            <section class="contact-card"><span class="contact-icon" data-icon="headphones"></span><div><h2 data-i18n="humanHelp">Prefer a human hello?</h2><p data-i18n="officeHelp">The admission office can help<br>with the details.</p><button class="text-button" data-prompt="contact"><span data-i18n="contactOffice">Contact admission office</span><span>↗</span></button></div></section>
-            <div class="fictional-note"><span data-icon="info"></span><p data-i18n="fictionalNote">Bayview is a fictional university created for the Beginner AI Hackathon. All dates and contacts are sample information.</p></div>
-          </aside>
-        </div>
-      </div>
-    </div>
-    <dialog id="source-dialog" aria-labelledby="source-title"><div class="dialog-heading"><div><span class="eyebrow green" data-i18n="sourceLabel">THE SOURCE OF OUR ANSWERS</span><h2 id="source-title" data-i18n="admissionSource">Admission information</h2></div><button class="icon-button" id="close-source" aria-label="Close source"><span data-icon="close"></span></button></div><p class="dialog-note" data-i18n="sourceNote">Original organizer-provided sample file. Answers cite these sections; fee estimates use the listed rates.</p><div id="source-content"></div></dialog>
-    <div class="toast" id="toast" role="status" hidden></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151529">
+  <meta name="description" content="Admibot-AI: a bilingual admission workspace with real university sources, your own documents, contextual AI answers and a personal application planner.">
+  <title>Admibot-AI · Your next chapter</title>
+  <link rel="icon" type="image/svg+xml" href="./src/favicon.svg">
+  <link rel="stylesheet" href="./src/workspace.css">
+  <script type="module" src="./src/workspace.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app"><div class="boot-screen"><span class="boot-logo">A<span>✦</span></span><h1>Admibot-AI</h1><p>Preparing your admission workspace…</p></div></div>
+  <noscript>Please enable JavaScript to use Admibot-AI.</noscript>
+</body>
 </html>
