@@ -1,0 +1,60 @@
+BAYVIEW INTERNATIONAL UNIVERSITY - ADMISSION INFORMATION (SAMPLE)
+Note: Bayview International University is a fictional university made for the Beginner AI Hackathon.
+
+1. ABOUT
+Bayview International University (BIU) is a private university in Chattogram. It offers undergraduate programs in five departments. Classes are held on campus. Admission is open in two semesters every year: Spring (January) and Fall (July).
+
+2. DEPARTMENTS AND PROGRAMS
+- Computer Science and Engineering (CSE): B.Sc., 4 years, 140 credits
+- Electrical and Electronic Engineering (EEE): B.Sc., 4 years, 140 credits
+- Civil Engineering (CE): B.Sc., 4 years, 150 credits
+- Business Administration (BBA): BBA, 4 years, 126 credits
+- English: B.A. (Hons), 4 years, 120 credits
+
+3. ELIGIBILITY
+- Engineering programs (CSE, EEE, CE): HSC (Science group) with a minimum GPA of 3.50 out of 5.00, and Mathematics and Physics must be passed.
+- BBA: HSC (any group) with a minimum GPA of 3.00 out of 5.00.
+- English: HSC (any group) with a minimum GPA of 3.00 out of 5.00.
+- SSC GPA must be at least 3.00 for all programs.
+- Students with a diploma or A-Level certificate can apply. The Admission Office checks each case.
+
+4. ADMISSION STEPS
+Step 1: Fill in the online application form on the university website.
+Step 2: Pay the application fee of BDT 1,000 by bKash.
+Step 3: Take the admission test on the date shown in your admit card. The test has 50 MCQ questions in 60 minutes (English, Mathematics and General Knowledge).
+Step 4: Check the result on the website. Selected students are listed by merit.
+Step 5: Submit the original documents (SSC and HSC certificates, transcripts, 2 passport-size photos, National ID or birth certificate) at the Admission Office.
+Step 6: Pay the admission fee and register for courses.
+
+5. FEES (PER SEMESTER, ESTIMATED)
+- Admission fee (one time): BDT 15,000
+- Tuition fee: BDT 4,500 per credit for CSE and EEE, BDT 4,000 per credit for CE, BDT 3,500 per credit for BBA and English
+- Semester fee: BDT 6,000 per semester for all departments
+- Lab fee: BDT 3,000 per semester for CSE, EEE and CE only
+- A student usually takes 12 to 15 credits in a semester.
+- Fees can be paid in three installments in each semester.
+
+6. WAIVERS AND SCHOLARSHIPS
+- Students with GPA 5.00 in HSC get a 50 percent tuition waiver in the first semester.
+- Students with GPA 4.80 to 4.99 in HSC get a 30 percent tuition waiver in the first semester.
+- Female students get a 10 percent tuition waiver in all semesters if they keep CGPA 3.00 or above.
+- Children of freedom fighters get a 20 percent tuition waiver.
+- Only one waiver can be taken at a time.
+
+7. IMPORTANT DATES (FALL 2027 INTAKE)
+- Application starts: 1 May 2027
+- Last date to apply: 30 June 2027
+- Admission test: 5 July 2027
+- Result: 8 July 2027
+- Classes start: 1 August 2027
+
+8. CAMPUS FACILITIES
+- Computer labs with free Wi-Fi, a library open 9:00 AM to 8:00 PM, a cafeteria, a prayer room, a sports field and student clubs.
+- A separate hostel facility for female students is available near the campus. A male hostel is not available. Male students may rent nearby apartments.
+- A university bus service runs between the campus and the main city areas. The bus fee is BDT 1,500 per month.
+
+9. CONTACT
+Admission Office, Bayview International University, Chattogram.
+Open: Sunday to Thursday, 9:00 AM to 5:00 PM.
+Email: admission@biu.example
+Phone: 01700-000000

@@ -1,0 +1,14 @@
+{
+  "name": "admibot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Admibot-AI: a bilingual, source-grounded admission assistant powered by Groq.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist"
+  },
+  "engines": { "node": ">=22" }
+}
